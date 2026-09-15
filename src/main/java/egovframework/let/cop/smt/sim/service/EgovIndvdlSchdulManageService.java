@@ -28,14 +28,14 @@ public interface EgovIndvdlSchdulManageService {
 	 *
 	 * @param indvdlSchdulManageVO    - 일정 정보 담김 VO
 	 */
-	public void deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
+	public int deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
 
 	/**
 	 * 일정를(을) 등록한다.
 	 *
 	 * @param indvdlSchdulManageVO    - 일정 정보 담김 VO
 	 */
-	public void insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
+	public int insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
 
 	/**
 	 * 일정를(을) 상세조회 한다.
@@ -91,5 +91,5 @@ public interface EgovIndvdlSchdulManageService {
 	 *
 	 * @param indvdlSchdulManageVO    - 일정 정보 담김 VO
 	 */
-	public void updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
+	public int updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO);
 }

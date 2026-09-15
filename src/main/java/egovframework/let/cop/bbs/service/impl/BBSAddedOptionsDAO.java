@@ -48,7 +48,7 @@ public class BBSAddedOptionsDAO extends EgovAbstractMapper {
      * 
      * @param BoardMaster
      */
-    public void updateAddedOptionsInf(BoardMaster boardMaster) {
-	update("BBSAddedOptionsDAO.updateAddedOptionsInf", boardMaster);
+    public int updateAddedOptionsInf(BoardMaster boardMaster) {
+	return update("BBSAddedOptionsDAO.updateAddedOptionsInf", boardMaster);
     }
 }

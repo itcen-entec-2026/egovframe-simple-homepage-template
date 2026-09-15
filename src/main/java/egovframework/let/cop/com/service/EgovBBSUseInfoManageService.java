@@ -28,7 +28,7 @@ public interface EgovBBSUseInfoManageService {
      * 
      * @param bdUseInf
      */
-    public void deleteBBSUseInf(BoardUseInf bdUseInf);
+    public int deleteBBSUseInf(BoardUseInf bdUseInf);
 
     /**
      * 커뮤니티에 사용되는 게시판 사용정보를 삭제한다.
@@ -49,21 +49,21 @@ public interface EgovBBSUseInfoManageService {
      * 
      * @param bdUseInf
      */
-    public void deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO);
+    public int deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO);
 
     /**
      * 동호회에 사용되는 모든 게시판 사용정보를 삭제한다.
      * 
      * @param bdUseInf
      */
-    public void deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO);
+    public int deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO);
 
     /**
      * 게시판 사용정보를 등록한다.
      * 
      * @param bdUseInf
      */
-    public void insertBBSUseInf(BoardUseInf bdUseInf);
+    public int insertBBSUseInf(BoardUseInf bdUseInf);
 
     /**
      * 게시판 사용정보 목록을 조회한다.
@@ -78,7 +78,7 @@ public interface EgovBBSUseInfoManageService {
      * 
      * @param bdUseInf
      */
-    public void updateBBSUseInf(BoardUseInf bdUseInf);
+    public int updateBBSUseInf(BoardUseInf bdUseInf);
 
     /**
      * 게시판 사용정보에 대한 상세정보를 조회한다.
@@ -93,6 +93,6 @@ public interface EgovBBSUseInfoManageService {
      * 
      * @param bdUseInf
      */
-    public void deleteBBSUseInfByBoardId(BoardUseInf bdUseInf);
+    public int deleteBBSUseInfByBoardId(BoardUseInf bdUseInf);
 
 }

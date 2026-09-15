@@ -93,8 +93,8 @@ public class FileManageDAO extends EgovComAbstractDAO {
 	 *
 	 * @param fvo
 	 */
-	public void deleteFileInf(FileVO fvo) {
-		delete("FileManageDAO.deleteFileDetail", fvo);
+	public int deleteFileInf(FileVO fvo) {
+		return delete("FileManageDAO.deleteFileDetail", fvo);
 	}
 
 	/**
@@ -132,8 +132,8 @@ public class FileManageDAO extends EgovComAbstractDAO {
 	 *
 	 * @param fvo
 	 */
-	public void deleteAllFileInf(FileVO fvo) {
-		update("FileManageDAO.deleteCOMTNFILE", fvo);
+	public int deleteAllFileInf(FileVO fvo) {
+		return update("FileManageDAO.deleteCOMTNFILE", fvo);
 	}
 
 	/**

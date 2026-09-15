@@ -34,7 +34,7 @@ public interface EgovBBSManageService {
 	 * 
 	 * @param boardVO
 	 */
-	public void deleteGuestList(BoardVO boardVO);
+	public int deleteGuestList(BoardVO boardVO);
 
 	/**
 	 * 방명록에 대한 패스워드를 조회 한다.
@@ -81,6 +81,6 @@ public interface EgovBBSManageService {
 	 * 
 	 * @param Board
 	 */
-	public void updateBoardArticle(Board Board);
+	public int updateBoardArticle(Board Board);
 
 }

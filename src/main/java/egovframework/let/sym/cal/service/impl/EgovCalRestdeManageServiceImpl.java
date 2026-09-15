@@ -102,16 +102,16 @@ public class EgovCalRestdeManageServiceImpl extends EgovAbstractServiceImpl impl
 	 * 휴일을 삭제한다.
 	 */
 	@Override
-	public void deleteRestde(Restde restde) {
-		restdeManageDAO.deleteRestde(restde);
+	public int deleteRestde(Restde restde) {
+		return restdeManageDAO.deleteRestde(restde);
 	}
 
 	/**
 	 * 휴일을 등록한다.
 	 */
 	@Override
-	public void insertRestde(Restde restde) {
-    	restdeManageDAO.insertRestde(restde);
+	public int insertRestde(Restde restde) {
+		return restdeManageDAO.insertRestde(restde);
 	}
 
 	/**
@@ -143,8 +143,8 @@ public class EgovCalRestdeManageServiceImpl extends EgovAbstractServiceImpl impl
 	 * 휴일을 수정한다.
 	 */
 	@Override
-	public void updateRestde(Restde restde) {
-		restdeManageDAO.updateRestde(restde);
+	public int updateRestde(Restde restde) {
+		return restdeManageDAO.updateRestde(restde);
 	}
 
 }
