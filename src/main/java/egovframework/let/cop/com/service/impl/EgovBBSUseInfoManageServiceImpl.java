@@ -42,8 +42,8 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#deleteBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
      */
-    public void deleteBBSUseInf(BoardUseInf bdUseInf) {
-	bbsUseDAO.deleteBBSUseInf(bdUseInf);
+    public int deleteBBSUseInf(BoardUseInf bdUseInf) {
+	return bbsUseDAO.deleteBBSUseInf(bdUseInf);
     }
 
     /**
@@ -51,8 +51,8 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#insertBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
      */
-    public void insertBBSUseInf(BoardUseInf bdUseInf) {
-	bbsUseDAO.insertBBSUseInf(bdUseInf);
+    public int insertBBSUseInf(BoardUseInf bdUseInf) {
+    	return bbsUseDAO.insertBBSUseInf(bdUseInf);
     }
 
     /**
@@ -78,8 +78,8 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#updateBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
      */
-    public void updateBBSUseInf(BoardUseInf bdUseInf) {
-	bbsUseDAO.updateBBSUseInf(bdUseInf);
+    public int updateBBSUseInf(BoardUseInf bdUseInf) {
+    	return bbsUseDAO.updateBBSUseInf(bdUseInf);
     }
 
     /**
@@ -139,8 +139,8 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByClub(egovframework.let.cop.com.service.BoardUseInfVO)
      */
-    public void deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO) {
-	bbsUseDAO.deleteAllBBSUseInfByClub(bdUseVO);
+    public int deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO) {
+    	return bbsUseDAO.deleteAllBBSUseInfByClub(bdUseVO);
     }
 
     /**
@@ -148,8 +148,8 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByCmmnty(egovframework.let.cop.com.service.BoardUseInfVO)
      */
-    public void deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) {
-	bbsUseDAO.deleteAllBBSUseInfByCmmnty(bdUseVO);
+    public int deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) {
+    	return bbsUseDAO.deleteAllBBSUseInfByCmmnty(bdUseVO);
     }
 
     /**
@@ -157,7 +157,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
      * 
      * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByBoardId(egovframework.let.cop.com.service.BoardUseInf)
      */
-    public void deleteBBSUseInfByBoardId(BoardUseInf bdUseInf) {
-	bbsUseDAO.deleteBBSUseInfByBoardId(bdUseInf);
+    public int deleteBBSUseInfByBoardId(BoardUseInf bdUseInf) {
+    	return bbsUseDAO.deleteBBSUseInfByBoardId(bdUseInf);
     }
 }

@@ -82,13 +82,13 @@ public interface EgovCalRestdeManageService {
 	 * 휴일을 삭제한다.
 	 * @param restde
 	 */
-	void deleteRestde(Restde restde);
+	int deleteRestde(Restde restde);
 
 	/**
 	 * 휴일을 등록한다.
 	 * @param restde
 	 */
-	void insertRestde(Restde restde);
+	int insertRestde(Restde restde);
 
 	/**
 	 * 휴일 상세항목을 조회한다.
@@ -115,6 +115,6 @@ public interface EgovCalRestdeManageService {
 	 * 휴일을 수정한다.
 	 * @param restde
 	 */
-	void updateRestde(Restde restde);
+	int updateRestde(Restde restde);
 
 }

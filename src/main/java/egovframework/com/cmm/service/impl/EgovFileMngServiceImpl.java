@@ -101,8 +101,8 @@ public class EgovFileMngServiceImpl extends EgovAbstractServiceImpl implements E
 	 * @see egovframework.com.cmm.service.EgovFileMngService#deleteFileInf(egovframework.com.cmm.service.FileVO)
 	 */
 	@Override
-	public void deleteFileInf(FileVO fvo) {
-		fileMngDAO.deleteFileInf(fvo);
+	public int deleteFileInf(FileVO fvo) {
+		return fileMngDAO.deleteFileInf(fvo);
 	}
 
 	/**
@@ -131,8 +131,8 @@ public class EgovFileMngServiceImpl extends EgovAbstractServiceImpl implements E
 	 * @see egovframework.com.cmm.service.EgovFileMngService#deleteAllFileInf(egovframework.com.cmm.service.FileVO)
 	 */
 	@Override
-	public void deleteAllFileInf(FileVO fvo) {
-		fileMngDAO.deleteAllFileInf(fvo);
+	public int deleteAllFileInf(FileVO fvo) {
+		return fileMngDAO.deleteAllFileInf(fvo);
 	}
 
 	/**

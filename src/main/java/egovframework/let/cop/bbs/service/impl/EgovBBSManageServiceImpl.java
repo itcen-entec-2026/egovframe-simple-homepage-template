@@ -155,8 +155,8 @@ public class EgovBBSManageServiceImpl extends EgovAbstractServiceImpl implements
      *
      * @see egovframework.let.cop.bbs.brd.service.EgovBBSManageService#updateBoardArticle(egovframework.let.cop.bbs.brd.service.Board)
      */
-    public void updateBoardArticle(Board board) {
-			bbsMngDAO.updateBoardArticle(board);
+    public int updateBoardArticle(Board board) {
+    	return bbsMngDAO.updateBoardArticle(board);
     }
 
     /**
@@ -164,8 +164,8 @@ public class EgovBBSManageServiceImpl extends EgovAbstractServiceImpl implements
      *
      * @see egovframework.let.cop.bbs.brd.service.EgovBBSManageService#deleteGuestList(egovframework.let.cop.bbs.brd.service.BoardVO)
      */
-    public void deleteGuestList(BoardVO boardVO) {
-	bbsMngDAO.deleteGuestList(boardVO);
+    public int deleteGuestList(BoardVO boardVO) {
+    	return bbsMngDAO.deleteGuestList(boardVO);
     }
 
     /**

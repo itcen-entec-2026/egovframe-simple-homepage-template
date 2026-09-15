@@ -47,8 +47,8 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#deleteTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
      */
-    public void deleteTemplateInf(TemplateInf tmplatInf) {
-	tmplatDAO.deleteTemplateInf(tmplatInf);
+    public int deleteTemplateInf(TemplateInf tmplatInf) {
+    	return tmplatDAO.deleteTemplateInf(tmplatInf);
     }
 
     /**
@@ -56,7 +56,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#insertTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
      */
-    public void insertTemplateInf(TemplateInf tmplatInf) {
+    public int insertTemplateInf(TemplateInf tmplatInf) {
 
 	try {
 		tmplatInf.setTmplatId(idgenService.getNextStringId());
@@ -64,7 +64,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 		throw new BaseRuntimeException(e);
 	}
 
-	tmplatDAO.insertTemplateInf(tmplatInf);
+	return tmplatDAO.insertTemplateInf(tmplatInf);
     }
 
     /**
@@ -113,8 +113,8 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
      * 
      * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#updateTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
      */
-    public void updateTemplateInf(TemplateInf tmplatInf) {
-	tmplatDAO.updateTemplateInf(tmplatInf);
+    public int updateTemplateInf(TemplateInf tmplatInf) {
+    	return tmplatDAO.updateTemplateInf(tmplatInf);
     }
 
     /**

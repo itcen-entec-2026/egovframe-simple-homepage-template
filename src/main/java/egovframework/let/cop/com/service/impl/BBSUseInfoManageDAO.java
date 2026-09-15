@@ -34,8 +34,8 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void deleteBBSUseInf(BoardUseInf bdUseInf) {
-    	update("BBSUseInfoManageDAO.deleteBBSUseInf", bdUseInf);
+    public int deleteBBSUseInf(BoardUseInf bdUseInf) {
+    	return update("BBSUseInfoManageDAO.deleteBBSUseInf", bdUseInf);
     }
 
     /**
@@ -61,8 +61,8 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) {
-    	update("BBSUseInfoManageDAO.deleteAllBBSUseInfByCmmnty", bdUseVO);
+    public int deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) {
+    	return update("BBSUseInfoManageDAO.deleteAllBBSUseInfByCmmnty", bdUseVO);
     }
 
     /**
@@ -70,8 +70,8 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO) {
-    	update("BBSUseInfoManageDAO.deleteAllBBSUseInfByClub", bdUseVO);
+    public int deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO) {
+    	return update("BBSUseInfoManageDAO.deleteAllBBSUseInfByClub", bdUseVO);
     }
 
     /**
@@ -79,8 +79,8 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void insertBBSUseInf(BoardUseInf bdUseInf) {
-    	insert("BBSUseInfoManageDAO.insertBBSUseInf", bdUseInf);
+    public int insertBBSUseInf(BoardUseInf bdUseInf) {
+    	return insert("BBSUseInfoManageDAO.insertBBSUseInf", bdUseInf);
     }
 
     /**
@@ -117,8 +117,8 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void updateBBSUseInf(BoardUseInf bdUseInf) {
-    	update("BBSUseInfoManageDAO.updateBBSUseInf", bdUseInf);
+    public int updateBBSUseInf(BoardUseInf bdUseInf) {
+    	return update("BBSUseInfoManageDAO.updateBBSUseInf", bdUseInf);
     }
 
     /**
@@ -126,7 +126,7 @@ public class BBSUseInfoManageDAO extends EgovAbstractMapper {
      *
      * @param bdUseInf
      */
-    public void deleteBBSUseInfByBoardId(BoardUseInf bdUseInf) {
-    	update("BBSUseInfoManageDAO.deleteBBSUseInfByBoardId", bdUseInf);
+    public int deleteBBSUseInfByBoardId(BoardUseInf bdUseInf) {
+    	return update("BBSUseInfoManageDAO.deleteBBSUseInfByBoardId", bdUseInf);
     }
 }

@@ -104,7 +104,7 @@ public class EgovIndvdlSchdulManageServiceImpl extends EgovAbstractServiceImpl i
 	 * @param indvdlSchdulManageVO - 조회할 정보가 담긴 VO
 	 */
 	@Override
-	public void insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+	public int insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
 		String sMakeId;
 		try {
 			sMakeId = idgenService.getNextStringId();
@@ -113,7 +113,7 @@ public class EgovIndvdlSchdulManageServiceImpl extends EgovAbstractServiceImpl i
 		}
 		indvdlSchdulManageVO.setSchdulId(sMakeId);
 
-		dao.insertIndvdlSchdulManage(indvdlSchdulManageVO);
+		return dao.insertIndvdlSchdulManage(indvdlSchdulManageVO);
 	}
 
     /**
@@ -121,8 +121,8 @@ public class EgovIndvdlSchdulManageServiceImpl extends EgovAbstractServiceImpl i
 	 * @param indvdlSchdulManageVO - 조회할 정보가 담긴 VO
 	 */
 	@Override
-	public void updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
-		dao.updateIndvdlSchdulManage(indvdlSchdulManageVO);
+	public int updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+		return dao.updateIndvdlSchdulManage(indvdlSchdulManageVO);
 	}
 
     /**
@@ -130,7 +130,7 @@ public class EgovIndvdlSchdulManageServiceImpl extends EgovAbstractServiceImpl i
 	 * @param indvdlSchdulManageVO - 조회할 정보가 담긴 VO
 	 */
 	@Override
-	public void deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
-		dao.deleteIndvdlSchdulManage(indvdlSchdulManageVO);
+	public int deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+		return dao.deleteIndvdlSchdulManage(indvdlSchdulManageVO);
 	}
 }

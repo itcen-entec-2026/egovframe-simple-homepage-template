@@ -62,7 +62,7 @@ public interface EgovFileMngService {
      *
      * @param fvo
      */
-    public void deleteFileInf(FileVO fvo);
+    public int deleteFileInf(FileVO fvo);
 
     /**
      * 파일에 대한 상세정보를 조회한다.
@@ -85,7 +85,7 @@ public interface EgovFileMngService {
      *
      * @param fvo
      */
-    public void deleteAllFileInf(FileVO fvo);
+    public int deleteAllFileInf(FileVO fvo);
 
     /**
      * 파일명 검색에 대한 목록을 조회한다.

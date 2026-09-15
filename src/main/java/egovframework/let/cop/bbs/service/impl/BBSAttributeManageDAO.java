@@ -35,8 +35,8 @@ public class BBSAttributeManageDAO extends EgovAbstractMapper {
 	 *
 	 * @param BoardMaster
 	 */
-	public void deleteBBSMasterInf(BoardMaster boardMaster) {
-		update("BBSAttributeManageDAO.deleteBBSMasterInf", boardMaster);
+	public int deleteBBSMasterInf(BoardMaster boardMaster) {
+		return update("BBSAttributeManageDAO.deleteBBSMasterInf", boardMaster);
 	}
 
 	/**
@@ -81,8 +81,8 @@ public class BBSAttributeManageDAO extends EgovAbstractMapper {
 	 *
 	 * @param BoardMaster
 	 */
-	public void updateBBSMasterInf(BoardMaster boardMaster) {
-		update("BBSAttributeManageDAO.updateBBSMasterInf", boardMaster);
+	public int updateBBSMasterInf(BoardMaster boardMaster) {
+		return update("BBSAttributeManageDAO.updateBBSMasterInf", boardMaster);
 	}
 
 	/**

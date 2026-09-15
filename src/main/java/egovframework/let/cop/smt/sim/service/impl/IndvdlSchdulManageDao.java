@@ -91,26 +91,26 @@ public class IndvdlSchdulManageDao extends EgovAbstractMapper {
 	 * 일정를(을) 등록한다.
 	 * @param qindvdlSchdulManageVO - 일정 정보 담김 VO
 	 */
-	public void insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
-		insert("IndvdlSchdulManage.insertIndvdlSchdulManage", indvdlSchdulManageVO);
+	public int insertIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+		return insert("IndvdlSchdulManage.insertIndvdlSchdulManage", indvdlSchdulManageVO);
 	}
 
     /**
 	 * 일정를(을) 수정한다.
 	 * @param indvdlSchdulManageVO - 일정 정보 담김 VO
 	 */
-	public void updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
-		insert("IndvdlSchdulManage.updateIndvdlSchdulManage", indvdlSchdulManageVO);
+	public int updateIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+		return insert("IndvdlSchdulManage.updateIndvdlSchdulManage", indvdlSchdulManageVO);
 	}
 
     /**
 	 * 일정를(을) 삭제한다.
 	 * @param indvdlSchdulManageVO - 일정 정보 담김 VO
 	 */
-	public void deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
+	public int deleteIndvdlSchdulManage(IndvdlSchdulManageVO indvdlSchdulManageVO) {
 		// 일지 삭제
 		//delete("IndvdlSchdulManage.deleteDiaryManage", indvdlSchdulManageVO);
 		// 일정관리 삭제
-		delete("IndvdlSchdulManage.deleteIndvdlSchdulManage", indvdlSchdulManageVO);
+		return delete("IndvdlSchdulManage.deleteIndvdlSchdulManage", indvdlSchdulManageVO);
 	}
 }

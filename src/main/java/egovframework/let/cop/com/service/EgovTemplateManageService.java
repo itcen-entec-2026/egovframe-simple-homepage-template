@@ -28,14 +28,14 @@ public interface EgovTemplateManageService {
 	 * 
 	 * @param tmplatInf
 	 */
-	public void deleteTemplateInf(TemplateInf tmplatInf);
+	public int deleteTemplateInf(TemplateInf tmplatInf);
 
 	/**
 	 * 템플릿 정보를 등록한다.
 	 * 
 	 * @param tmplatInf
 	 */
-	public void insertTemplateInf(TemplateInf tmplatInf);
+	public int insertTemplateInf(TemplateInf tmplatInf);
 
 	/**
 	 * 템플릿에 대한 상세정보를 조회한다.
@@ -74,6 +74,6 @@ public interface EgovTemplateManageService {
 	 * 
 	 * @param tmplatInf
 	 */
-	public void updateTemplateInf(TemplateInf tmplatInf);
+	public int updateTemplateInf(TemplateInf tmplatInf);
 
 }

@@ -106,8 +106,8 @@ public class RestdeManageDAO extends EgovAbstractMapper {
 	 * 휴일을 삭제한다.
 	 * @param restde
 	 */
-	public void deleteRestde(Restde restde) {
-		delete("RestdeManageDAO.deleteRestde", restde);
+	public int deleteRestde(Restde restde) {
+		return delete("RestdeManageDAO.deleteRestde", restde);
 	}
 
 
@@ -115,8 +115,8 @@ public class RestdeManageDAO extends EgovAbstractMapper {
 	 * 휴일을 등록한다.
 	 * @param restde
 	 */
-	public void insertRestde(Restde restde) {
-        insert("RestdeManageDAO.insertRestde", restde);
+	public int insertRestde(Restde restde) {
+		return insert("RestdeManageDAO.insertRestde", restde);
 	}
 
 	/**
@@ -151,8 +151,8 @@ public class RestdeManageDAO extends EgovAbstractMapper {
 	 * 휴일을 수정한다.
 	 * @param restde
 	 */
-	public void updateRestde(Restde restde) {
-		update("RestdeManageDAO.updateRestde", restde);
+	public int updateRestde(Restde restde) {
+		return update("RestdeManageDAO.updateRestde", restde);
 	}
 
 }

@@ -34,11 +34,11 @@ public class BBSManageDAO extends EgovAbstractMapper {
      *
      * @param board
      */
-    public void insertBoardArticle(Board board) {
+    public int insertBoardArticle(Board board) {
     	long nttId = (Long)selectOne("BBSManageDAO.selectMaxNttId");
     	board.setNttId(nttId);
 
-    	insert("BBSManageDAO.insertBoardArticle", board);
+    	return insert("BBSManageDAO.insertBoardArticle", board);
     }
 
     /**
@@ -102,8 +102,8 @@ public class BBSManageDAO extends EgovAbstractMapper {
      *
      * @param board
      */
-    public void updateBoardArticle(Board board) {
-    	update("BBSManageDAO.updateBoardArticle", board);
+    public int updateBoardArticle(Board board) {
+    	return update("BBSManageDAO.updateBoardArticle", board);
     }
 
     /**
@@ -111,8 +111,8 @@ public class BBSManageDAO extends EgovAbstractMapper {
      *
      * @param board
      */
-    public void deleteBoardArticle(Board board) {
-    	update("BBSManageDAO.deleteBoardArticle", board);
+    public int deleteBoardArticle(Board board) {
+    	return update("BBSManageDAO.deleteBoardArticle", board);
     }
 
     /**
@@ -120,8 +120,8 @@ public class BBSManageDAO extends EgovAbstractMapper {
      *
      * @param board
      */
-    public void updateInqireCo(BoardVO boardVO) {
-    	update("BBSManageDAO.updateInqireCo", boardVO);
+    public int updateInqireCo(BoardVO boardVO) {
+    	return update("BBSManageDAO.updateInqireCo", boardVO);
     }
 
     /**
@@ -193,8 +193,8 @@ public class BBSManageDAO extends EgovAbstractMapper {
      *
      * @param boardVO
      */
-    public void deleteGuestList(BoardVO boardVO) {
-    	update("BBSManageDAO.deleteGuestList", boardVO);
+    public int deleteGuestList(BoardVO boardVO) {
+    	return update("BBSManageDAO.deleteGuestList", boardVO);
     }
 
     /**

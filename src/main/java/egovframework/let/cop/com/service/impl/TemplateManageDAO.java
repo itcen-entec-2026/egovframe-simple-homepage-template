@@ -33,8 +33,8 @@ public class TemplateManageDAO extends EgovAbstractMapper {
      *
      * @param tmplatInf
      */
-    public void deleteTemplateInf(TemplateInf tmplatInf) {
-    	update("TemplateManageDAO.deleteTemplateInf", tmplatInf);
+    public int deleteTemplateInf(TemplateInf tmplatInf) {
+    	return update("TemplateManageDAO.deleteTemplateInf", tmplatInf);
     }
 
     /**
@@ -42,8 +42,8 @@ public class TemplateManageDAO extends EgovAbstractMapper {
      *
      * @param tmplatInf
      */
-    public void insertTemplateInf(TemplateInf tmplatInf) {
-    	insert("TemplateManageDAO.insertTemplateInf", tmplatInf);
+    public int insertTemplateInf(TemplateInf tmplatInf) {
+    	return insert("TemplateManageDAO.insertTemplateInf", tmplatInf);
     }
 
     /**
@@ -51,8 +51,8 @@ public class TemplateManageDAO extends EgovAbstractMapper {
      *
      * @param tmplatInf
      */
-    public void updateTemplateInf(TemplateInf tmplatInf) {
-    	update("TemplateManageDAO.updateTemplateInf", tmplatInf);
+    public int updateTemplateInf(TemplateInf tmplatInf) {
+    	return update("TemplateManageDAO.updateTemplateInf", tmplatInf);
     }
 
     /**

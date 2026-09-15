@@ -57,7 +57,7 @@ public class LoginDAO extends EgovAbstractMapper {
 	 * 변경된 비밀번호를 저장한다.
 	 * @param vo LoginVO
 	 */
-	public void updatePassword(LoginVO vo) {
-		update("loginDAO.updatePassword", vo);
+	public int updatePassword(LoginVO vo) {
+		return update("loginDAO.updatePassword", vo);
 	}
 }
